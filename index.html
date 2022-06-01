@@ -14,15 +14,14 @@
 
 <body>
     <header>
-        <img src="./img/1.jpg" alt="Dog Home">
         <div class="nav-header">
             <h1 class="logo">Dog Home</h1>
             <nav>
                 <a href="" class="hight-light">Home</a>
-                <a href="#statistics">Statistics</a>
-                <a href="#services">Services</a>
-                <a href="">Dropdown <i class="fa-solid fa-angle-down"></i></a>
-                <a href="">Contact Us</a>
+                <a href="#statistics" class="nav__item--hidden">Statistics</a>
+                <a href="#services" class="nav__item--hidden">Services</a>
+                <a href="" class="nav__item--hidden">Dropdown <i class="fa-solid fa-angle-down"></i></a>
+                <a href="" class="nav__item--hidden">Contact Us</a>
             </nav>
         </div>
 
@@ -98,7 +97,6 @@
         </section>
 
         <section id="statistics">
-            <img src="./img/bg.jpg" alt="">
             <div class="list-statc">
                 <h2>Our Statistics</h2>
                 <div>
@@ -156,7 +154,6 @@
         </section>
 
         <section id="testimonials">
-            <img src="./img/bg.jpg" alt="">
             <div class="main-test">
                 <h2>Testimonials</h2>
                 <div>
@@ -230,7 +227,7 @@
                     </div>
                 </div>
                 <div class="right-contact">
-                    <form action="">
+                    <form action="" class="contact__form">
                         <input type="text" name="name" id="nae" placeholder="Name">
                         <input type="email" name="email" id="email" placeholder="Email">
                         <textarea name="mess" id="mess" cols="30" rows="10" placeholder="Message..."></textarea>
@@ -243,15 +240,15 @@
     </main>
 
     <footer>
-        <div>
+        <div class="footer__div--top">
             <h3>ABOUT US</h3>
             <p>Sed ut perspiciatis unde omnis iste natus error sit.Error sit antium dolorts remq hymue laud.</p>
         </div>
-        <div>
+        <div class="footer__div--top">
             <h3>WHO WE ARE</h3>
             <p>Error sit antium dolorts remq hymue laud.Sed ut perspiciatis unde omnis iste natus error sit.</p>
         </div>
-        <div>
+        <div class="footer__div--center">
             <h3>ABOUT US</h3>
             <h4>Phone</h4>
             <p>+121 098 8907 9987</p>
@@ -260,10 +257,10 @@
             <h4>location</h4>
             <p>Honey Avenue, New York City</p>
         </div>
-        <div>
+        <div class="footer__div--bottom">
             <h3>NEWSLETER</h3>
             <p>Be the first to get latest news and offers! Sed ut perspiciatis unde omnis.</p>
-            <form action="">
+            <form action="" class="footer__form">
                 <input type="text" name="yourEmail" id="yourEmail" placeholder="Enter your email..">
                 <input type="submit" value="Submit" id="ft-sbm">
             </form>
