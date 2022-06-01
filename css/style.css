@@ -49,6 +49,7 @@ a:hover {
 }
 
 p {
+    color: #999;
     text-align: center;
     letter-spacing: 1px;
     margin: 0;
@@ -129,7 +130,6 @@ section {
 
 .welcome p {
     padding: 40px 0;
-    color: #999;
 }
 
 .welcome img {
@@ -145,10 +145,6 @@ section {
     margin: 30px 0;
 }
 
-#what-we-do p {
-    color: #999;
-}
-
 .dog-list {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
@@ -161,6 +157,7 @@ section {
 }
 
 .dog-list img {
+    width: 70%;
     border-radius: 50%;
 }
 
@@ -209,7 +206,6 @@ section {
 }
 
 #services p {
-    color: #999;
     margin-bottom: 40px;
 }
 
@@ -231,7 +227,7 @@ section {
 .right-sevices {
     width: 60%;
     display: grid;
-    grid-template: 50% 50% / 1fr 1fr;
+    grid-template: 1fr 1fr / 1fr 1fr;
     gap: 18px 15px;
 }
 
@@ -266,12 +262,10 @@ section {
 
 #testimonials>img {
     width: 100%;
-    height: auto;
 }
 
 .main-test {
     width: 60%;
-    height: 75%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -303,10 +297,6 @@ section {
     text-align: end;
     color: var(--color-icons--);
     font-size: 18px;
-}
-
-#our-blog {
-    height: 100vh;
 }
 
 #our-blog h2 {
@@ -421,16 +411,28 @@ textarea {
     border: 1px solid #e6e6e6;
 }
 
-#mess::placeholder {
+#mess:placeholder {
     text-align: start;
+}
+
+.p--white {
+    color: #fff;
+}
+
+.p--black {
+    color: black;
+    font-weight: bold;
+}
+
+span {
+    color: black;
 }
 
 footer {
     padding: 35px 10%;
-    height: 80vh;
     background-color: #202022;
     display: grid;
-    grid-template: 30px auto / 1fr 1fr 1fr 1fr;
+    grid-template: auto / 1fr 1fr 1fr 1fr;
     gap: 20px;
     text-align: start;
     color: #fff;
@@ -438,7 +440,6 @@ footer {
 
 footer p {
     text-align: start;
-    color: #999;
 }
 
 #yourEmail {
@@ -450,4 +451,8 @@ footer p {
     width: 30%;
     background-color: var(--color-icons--);
     border: none;
+}
+
+@media screen and (max-width: 500px){
+    
 }
