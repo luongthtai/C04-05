@@ -16,18 +16,27 @@
     <header>
         <div class="nav-header">
             <h1 class="logo">Dog Home</h1>
-            <nav>
-                <a href="" class="hight-light">Home</a>
-                <a href="#statistics" class="nav__item--hidden">Statistics</a>
-                <a href="#services" class="nav__item--hidden">Services</a>
-                <a href="" class="nav__item--hidden">Dropdown <i class="fa-solid fa-angle-down"></i></a>
-                <a href="" class="nav__item--hidden">Contact Us</a>
+            <nav class="nav-header__menu">
+                <ul class="nav-header__menu--items">
+                    <li><a href="" class="hight-light">Home</a></li>
+                    <li> <a href="#statistics" class="nav__item--hidden">Statistics</a></li>
+                    <li> <a href="#services" class="nav__item--hidden">Services</a></li>
+                    <li class="drop-down"><a href="" class="nav__item--hidden">Dropdown <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                    <ul class="drop-down__items">
+                        <li><a href="#our-blog">Blog</a></li>
+                        <li><a href="#what-we-do">what we do</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul></li>
+                    <li> <a href="" class="nav__item--hidden">Contact Us</a></li>
+                </ul>
             </nav>
         </div>
 
         <div class="main-header">
             <h2>HOW TO TRAIN YOUR DOG</h2>
-            <p class="p--white">Sed ut perspiciatis unde omnis iste natus error sit acntium doemque laudantium, totam rem aperiam eaque
+            <p class="p--white">Sed ut perspiciatis unde omnis iste natus error sit acntium doemque laudantium, totam
+                rem aperiam eaque
                 ipsa quae ab illo.</p>
             <button>Read More</button>
         </div>
@@ -130,25 +139,33 @@
                 </p>
             </div>
             <div class="right-sevices">
-                <div>
-                    <i class="fa-solid fa-fire"></i>
-                    <h3>Grooming</h3>
-                    <p>Integer sit amet mattis quam, sit amet ultricies velit.</p>
+                <div class="right-sevices__items">
+                    <div class="right-sevices__items--content">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        <h3>Grooming</h3>
+                        <p>Integer sit amet mattis quam, sit amet ultricies velit.</p>
+                    </div>
                 </div>
-                <div>
-                    <i class="fa-brands fa-github"></i>
-                    <h3>Grooming</h3>
-                    <p>Integer sit amet mattis quam, sit amet ultricies velit.</p>
+                <div class="right-sevices__items">
+                    <div class="right-sevices__items--content">
+                        <i class="fa-brands fa-github"></i>
+                        <h3>Grooming</h3>
+                        <p>Integer sit amet mattis quam, sit amet ultricies velit.</p>
+                    </div>
                 </div>
-                <div>
-                    <i class="fa-regular fa-heart"></i>
-                    <h3>Grooming</h3>
-                    <p>Integer sit amet mattis quam, sit amet ultricies velit.</p>
+                <div class="right-sevices__items">
+                    <div class="right-sevices__items--content">
+                        <i class="fa-regular fa-heart"></i>
+                        <h3>Grooming</h3>
+                        <p>Integer sit amet mattis quam, sit amet ultricies velit.</p>
+                    </div>
                 </div>
-                <div>
-                    <i class="fas fa-medkit"></i>
-                    <h3>Grooming</h3>
-                    <p>Integer sit amet mattis quam, sit amet ultricies velit.</p>
+                <div class="right-sevices__items">
+                    <div class="right-sevices__items--content">
+                        <i class="fas fa-medkit"></i>
+                        <h3>Grooming</h3>
+                        <p>Integer sit amet mattis quam, sit amet ultricies velit.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -156,20 +173,32 @@
         <section id="testimonials">
             <div class="main-test">
                 <h2>Testimonials</h2>
-                <div>
-                    <p class="p--white">"Sed ut perspiciatis unde omnis iste natus error sit volup tatem accus antium dolore tium."</p>
-                    <img src="./img/te1.jpg" alt="">
-                    <h4>- LOREM ISUM</h4>
+                <div class="main-test__items">
+                    <div class="main-test__items--content">
+                        <p class="p--white">"Sed ut perspiciatis unde omnis iste natus error sit volup tatem accus
+                            antium
+                            dolore tium."</p>
+                        <img src="./img/te1.jpg" alt="">
+                        <h4>- LOREM ISUM</h4>
+                    </div>
                 </div>
-                <div>
-                    <p class="p--white">"Sed ut perspiciatis unde omnis iste natus error sit volup tatem accus antium dolore tium."</p>
-                    <img src="./img/te2.jpg" alt="">
-                    <h4>- LOREM ISUM</h4>
+                <div class="main-test__items">
+                    <div class="main-test__items--content">
+                        <p class="p--white">"Sed ut perspiciatis unde omnis iste natus error sit volup tatem accus
+                            antium
+                            dolore tium."</p>
+                        <img src="./img/te2.jpg" alt="">
+                        <h4>- LOREM ISUM</h4>
+                    </div>
                 </div>
-                <div>
-                    <p class="p--white">"Sed ut perspiciatis unde omnis iste natus error sit volup tatem accus antium dolore tium."</p>
-                    <img src="./img/te3.jpg" alt="">
-                    <h4>- LOREM ISUM</h4>
+                <div class="main-test__items">
+                    <div class="main-test__items--content">
+                        <p class="p--white">"Sed ut perspiciatis unde omnis iste natus error sit volup tatem accus
+                            antium
+                            dolore tium."</p>
+                        <img src="./img/te3.jpg" alt="">
+                        <h4>- LOREM ISUM</h4>
+                    </div>
                 </div>
             </div>
         </section>
@@ -240,11 +269,11 @@
     </main>
 
     <footer>
-        <div class="footer__div--top">
+        <div>
             <h3>ABOUT US</h3>
             <p>Sed ut perspiciatis unde omnis iste natus error sit.Error sit antium dolorts remq hymue laud.</p>
         </div>
-        <div class="footer__div--top">
+        <div>
             <h3>WHO WE ARE</h3>
             <p>Error sit antium dolorts remq hymue laud.Sed ut perspiciatis unde omnis iste natus error sit.</p>
         </div>
