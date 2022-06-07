@@ -173,11 +173,11 @@ section {
     padding: 50px 10%;
 }
 
-.welcome p {
+#welcome p {
     padding: 40px 0;
 }
 
-.welcome img {
+#welcome img {
     width: 100%;
 }
 
@@ -242,7 +242,7 @@ section {
     justify-content: space-between;
 }
 
-.list-statc h3 {
+.statistics__items--number {
     margin-bottom: 0px;
     font-size: 65px;
     font-weight: normal;

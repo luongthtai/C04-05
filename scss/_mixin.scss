@@ -1,0 +1,51 @@
+@mixin size($width: 100%, $height: auto) {
+    width: $width;
+    height: $height;
+}
+
+@mixin direction($position: center) {
+    position: absolute;
+
+    @if $position == center {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    @if $position == left {
+        top: 50%;
+        left: 0;
+        transform: translateX(-50%);
+    }
+
+    @if $position == right {
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}
+
+@mixin theme {
+    background-color: $bgc-web;
+    // color: ;
+}
+
+@mixin background-img($direction: center) {
+    position: relative;
+
+    @if $direction == center {
+        background-position: center;
+        background-size: cover;
+    }
+
+    @if $direction == top {
+        background-position: top;
+        background-size: cover;
+    }
+}
+
+@mixin dp-grid($col, $row) {
+    display: grid;
+    grid-template: $row / $col;
+    gap: 20px;
+}
