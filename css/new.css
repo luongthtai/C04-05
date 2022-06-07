@@ -1,4 +1,4 @@
-#contact .contact-content__left--items, #contact .contact-content, #services, .nav-header__menu--items, .nav-header {
+footer form, #contact .contact-content__left--items, #contact .contact-content, #our-blog .wrapper__items, #services, .nav-header__menu--items, .nav-header {
   display: flex;
 }
 
@@ -61,6 +61,13 @@ header {
   padding: 0 3rem;
   justify-content: space-between;
   align-items: center;
+}
+.nav-header .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
 }
 .nav-header__menu--items {
   padding: 0;
@@ -348,6 +355,9 @@ header {
   grid-template: auto/1fr 1fr 1fr;
   gap: 20px;
 }
+#our-blog .wrapper__items {
+  flex-direction: column;
+}
 #our-blog .wrapper__items img {
   width: 100%;
   border-radius: 3px;
@@ -476,6 +486,9 @@ header {
   font-size: 1rem;
   font-family: "Nunito Sans", sans-serif;
 }
+#contact .contact-content__right form textarea {
+  resize: none;
+}
 #contact .contact-content__right form #submit {
   border: none;
   border-radius: 5px;
@@ -526,12 +539,12 @@ footer .google {
 }
 footer form {
   width: 100%;
+  flex-wrap: wrap;
 }
-footer form input:first-child {
-  width: 65%;
+footer form input {
+  border: none;
 }
 footer form input:last-child {
-  width: 30%;
   background-color: #ff9900;
   color: #fff;
 }
@@ -550,10 +563,6 @@ footer form input:last-child:hover {
 
   .nav__items--hidden {
     display: none !important;
-  }
-
-  #welcome {
-    width: 100%;
   }
 
   #what-we-do .dog-list {
@@ -578,15 +587,17 @@ footer form input:last-child:hover {
   #testimonials .main-test__items {
     padding: 1rem 0.1rem;
   }
+
+  footer form input:first-child {
+    width: 65%;
+  }
+  footer form input:last-child {
+    width: 30%;
+  }
 }
 @media only screen and (max-width: 576px) {
   body {
-    width: 100%;
     font-size: 14px;
-  }
-
-  #welcome, #what-we-do, #statistics, #services, #testimonials, #our-blog, #contact, footer {
-    width: 100%;
   }
 
   #what-we-do .dog-list {
