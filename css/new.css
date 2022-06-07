@@ -139,7 +139,7 @@ header {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 2rem;
+  bottom: 3%;
 }
 .label-list label {
   cursor: pointer;
@@ -537,6 +537,125 @@ footer form input:last-child {
 }
 footer form input:last-child:hover {
   background-color: #f8ad3e;
+}
+
+@media only screen and (max-width: 992px) {
+  #welcome, #what-we-do, #statistics, #services, #testimonials, #our-blog, #contact, footer {
+    padding: 3.5rem 4%;
+  }
+
+  body {
+    font-size: 20px;
+  }
+
+  .nav__items--hidden {
+    display: none !important;
+  }
+
+  #welcome {
+    width: 100%;
+  }
+
+  #what-we-do .dog-list {
+    display: grid;
+    grid-template: auto/1fr 1fr;
+    gap: 20px;
+  }
+  #what-we-do .dog-list img {
+    width: 40%;
+  }
+
+  #statistics .statistics__items {
+    display: grid;
+    grid-template: auto/1fr 1fr;
+    gap: 20px;
+  }
+
+  #services .services-left {
+    padding: 0;
+  }
+
+  #testimonials .main-test__items {
+    padding: 1rem 0.1rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  body {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  #welcome, #what-we-do, #statistics, #services, #testimonials, #our-blog, #contact, footer {
+    width: 100%;
+  }
+
+  #what-we-do .dog-list {
+    display: grid;
+    grid-template: auto/1fr;
+    gap: 20px;
+  }
+  #what-we-do .dog-list img {
+    width: 30%;
+  }
+
+  #statistics .statistics__items {
+    display: grid;
+    grid-template: auto/1fr;
+    gap: 20px;
+  }
+
+  #services {
+    display: block;
+  }
+  #services .services-left {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  #services .services-right {
+    width: 100%;
+    display: grid;
+    grid-template: auto/1fr;
+    gap: 20px;
+  }
+  #services .services-right__items div {
+    width: 100%;
+  }
+
+  #testimonials .main-test {
+    display: grid;
+    grid-template: auto/1fr;
+    gap: 20px;
+  }
+  #testimonials .main-test h4 {
+    text-align: center;
+  }
+
+  #our-blog .wrapper {
+    display: grid;
+    grid-template: auto/1fr;
+    gap: 20px;
+    gap: 2rem;
+  }
+
+  #contact .contact-content {
+    display: block;
+    padding: 0;
+  }
+  #contact .contact-content__left, #contact .contact-content__right {
+    width: 100%;
+  }
+
+  footer {
+    display: grid;
+    grid-template: auto/1fr 1fr;
+    gap: 20px;
+  }
+  footer .footer__div--center {
+    grid-area: 2/1/3/3;
+  }
+  footer .footer__div--bottom {
+    grid-area: 3/1/3/3;
+  }
 }
 
 /*# sourceMappingURL=new.css.map */

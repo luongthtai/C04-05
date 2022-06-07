@@ -160,7 +160,7 @@ header {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 2rem;
+    bottom: 3%;
 
     label {
         cursor: pointer;
@@ -690,6 +690,137 @@ footer {
                 }
             }
 
+        }
+    }
+}
+
+@media only screen and (max-width: 992px)  {
+    %pd-section {
+        padding: 3.5rem 4%;
+    }
+    
+    body {
+        font-size: 20px;
+    }
+
+    .nav__items--hidden {
+        display: none !important;
+    }
+
+    #welcome {
+        width: 100%;
+    }
+
+    #what-we-do {
+        .dog-list {
+            @include dp-grid(1fr 1fr, auto);
+            img {
+                width: 40%;
+            }
+        }
+    }
+
+    #statistics {
+        .statistics__items {
+            @include dp-grid(1fr 1fr , auto);
+        }
+    }
+
+    #services {
+        .services-left {
+            padding: 0;
+        }
+    }
+
+    #testimonials {
+        .main-test__items {
+            padding: 1rem .1rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    body {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    %pd-section {
+        width: 100%;
+    }
+
+    #what-we-do {
+        .dog-list {
+            @include dp-grid(1fr, auto);
+
+            img {
+                width: 30%;
+            }
+        }
+    }
+
+    #statistics {
+        .statistics__items {
+            @include dp-grid(1fr, auto);
+        }
+    }
+
+    #services {
+        display: block;
+        .services-left {
+            width: 100%;
+            padding-bottom: 2rem;
+        }
+
+        .services-right {
+            width: 100%;
+            @include dp-grid(1fr, auto);
+
+            &__items {
+                div {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #testimonials {
+        .main-test {
+            @include dp-grid(1fr, auto);
+
+            h4 {
+                text-align: center;
+            }
+        }
+    }
+
+    #our-blog {
+        .wrapper {
+            @include dp-grid(1fr, auto);
+            gap: 2rem;
+        }
+    }
+
+    #contact {
+        .contact-content {
+            display: block;
+            padding: 0;
+            
+            &__left, &__right {
+                width: 100%;
+            }
+        }
+    }
+
+    footer {
+        @include dp-grid(1fr 1fr, auto);
+
+        .footer__div--center {
+            grid-area: 2 / 1 / 3 / 3;
+        }
+    
+        .footer__div--bottom {
+            grid-area: 3 / 1 / 3 / 3;
         }
     }
 }
