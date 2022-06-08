@@ -697,6 +697,7 @@ footer {
 
     .nav-header__menu--items .hight-light {
         background: none;
+
         a {
             color: $color-web;
         }
@@ -747,6 +748,41 @@ footer {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    #services {
+        display: block;
+
+        .services-left {
+            width: 100%;
+            padding-bottom: 2rem;
+        }
+
+        .services-right {
+            width: 100%;
+            @include dp-grid(1fr, auto);
+
+            &__items {
+                div {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    footer {
+        @include dp-grid(1fr 1fr, auto);
+
+        .footer__div--center {
+            grid-area: 2 / 1 / 3 / 3;
+        }
+
+        .footer__div--bottom {
+            grid-area: 3 / 1 / 3 / 3;
+        }
+    }
+
+}
+
 @media only screen and (max-width: 576px) {
     body {
         font-size: 14px;
@@ -765,26 +801,6 @@ footer {
     #statistics {
         .statistics__items {
             @include dp-grid(1fr, auto);
-        }
-    }
-
-    #services {
-        display: block;
-
-        .services-left {
-            width: 100%;
-            padding-bottom: 2rem;
-        }
-
-        .services-right {
-            width: 100%;
-            @include dp-grid(1fr, auto);
-
-            &__items {
-                div {
-                    width: 100%;
-                }
-            }
         }
     }
 
@@ -814,18 +830,6 @@ footer {
             &__right {
                 width: 100%;
             }
-        }
-    }
-
-    footer {
-        @include dp-grid(1fr 1fr, auto);
-
-        .footer__div--center {
-            grid-area: 2 / 1 / 3 / 3;
-        }
-
-        .footer__div--bottom {
-            grid-area: 3 / 1 / 3 / 3;
         }
     }
 }
