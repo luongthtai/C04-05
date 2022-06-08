@@ -546,6 +546,13 @@ footer form input:last-child:hover {
     font-size: 20px;
   }
 
+  .nav-header__menu--items .hight-light {
+    background: none;
+  }
+  .nav-header__menu--items .hight-light a {
+    color: #fff;
+  }
+
   .nav__items--hidden {
     display: none !important;
   }

@@ -695,6 +695,13 @@ footer {
         font-size: 20px;
     }
 
+    .nav-header__menu--items .hight-light {
+        background: none;
+        a {
+            color: $color-web;
+        }
+    }
+
     .nav__items--hidden {
         display: none !important;
     }
