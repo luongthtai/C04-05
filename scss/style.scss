@@ -143,8 +143,8 @@ header {
     @include direction();
     text-align: center;
 
-    h2 {
-        @extend %h2;
+    h1 {
+        font-size: 3rem;
     }
 
     p {
